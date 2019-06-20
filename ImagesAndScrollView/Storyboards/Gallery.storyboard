@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez4-Zf-w8U">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery-->
+        <scene sceneID="IXy-dO-lkJ">
+            <objects>
+                <viewController id="ez4-Zf-w8U" customClass="ScrollViewController" customModule="ImagesAndScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KKQ-qQ-MhG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="k40-tV-2rb">
+                                <rect key="frame" x="41.5" y="74" width="331" height="124"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="qTT-Zs-yAx">
+                                        <rect key="frame" x="0.0" y="0.0" width="486" height="124"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfE-S9-NoQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="124"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rfE-S9-NoQ" secondAttribute="height" multiplier="4:6" id="JeQ-E4-gbb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="bear"/>
+                                                <connections>
+                                                    <action selector="smallImagePressed:" destination="ez4-Zf-w8U" eventType="touchUpInside" id="Jj8-PS-5cr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-Ym-IQD">
+                                                <rect key="frame" x="100.5" y="0.0" width="83" height="124"/>
+                                                <state key="normal" title="Button" image="cat"/>
+                                                <connections>
+                                                    <action selector="smallImagePressed:" destination="ez4-Zf-w8U" eventType="touchUpInside" id="7d9-uh-R7Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp1-0E-Szh">
+                                                <rect key="frame" x="201.5" y="0.0" width="83" height="124"/>
+                                                <state key="normal" title="Button" image="donkey"/>
+                                                <connections>
+                                                    <action selector="smallImagePressed:" destination="ez4-Zf-w8U" eventType="touchUpInside" id="YEd-9a-Jme"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-Ln-eb8">
+                                                <rect key="frame" x="302.5" y="0.0" width="82.5" height="124"/>
+                                                <state key="normal" title="Button" image="elephant"/>
+                                                <connections>
+                                                    <action selector="smallImagePressed:" destination="ez4-Zf-w8U" eventType="touchUpInside" id="9hO-d0-Yp7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-j9-wmQ">
+                                                <rect key="frame" x="403" y="0.0" width="83" height="124"/>
+                                                <state key="normal" title="Button" image="cat2"/>
+                                                <connections>
+                                                    <action selector="smallImagePressed:" destination="ez4-Zf-w8U" eventType="touchUpInside" id="zfs-gO-SQm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="qTT-Zs-yAx" secondAttribute="height" id="87E-Sc-NDW"/>
+                                    <constraint firstAttribute="bottom" secondItem="qTT-Zs-yAx" secondAttribute="bottom" id="JPB-Mu-Jss"/>
+                                    <constraint firstItem="qTT-Zs-yAx" firstAttribute="leading" secondItem="k40-tV-2rb" secondAttribute="leading" id="K7i-fe-D3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="qTT-Zs-yAx" secondAttribute="trailing" id="eDz-or-coc"/>
+                                    <constraint firstItem="qTT-Zs-yAx" firstAttribute="top" secondItem="k40-tV-2rb" secondAttribute="top" id="hYa-Cr-61s"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rc6-m9-K8B">
+                                <rect key="frame" x="41.5" y="284" width="331" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donkey" translatesAutoresizingMaskIntoConstraints="NO" id="Z90-5F-sBH">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="Gei-31-bT3"/>
+                                            <constraint firstAttribute="height" constant="600" id="ShN-DW-iea"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z90-5F-sBH" firstAttribute="leading" secondItem="Rc6-m9-K8B" secondAttribute="leading" id="3Hs-n6-xbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z90-5F-sBH" secondAttribute="trailing" id="6zo-qm-Mub"/>
+                                    <constraint firstItem="Z90-5F-sBH" firstAttribute="top" secondItem="Rc6-m9-K8B" secondAttribute="top" id="SdP-Cc-7nu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z90-5F-sBH" secondAttribute="bottom" id="wjJ-Ha-oZc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="ez4-Zf-w8U" id="FJz-N2-RDK"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rc6-m9-K8B" firstAttribute="width" secondItem="KKQ-qQ-MhG" secondAttribute="width" multiplier="0.8" id="4h0-RB-Oq6"/>
+                            <constraint firstItem="rfE-S9-NoQ" firstAttribute="width" secondItem="KKQ-qQ-MhG" secondAttribute="width" multiplier="1/5" id="S2f-9r-M9l"/>
+                            <constraint firstItem="k40-tV-2rb" firstAttribute="centerX" secondItem="KKQ-qQ-MhG" secondAttribute="centerX" id="S7P-lh-Ps0"/>
+                            <constraint firstItem="Rc6-m9-K8B" firstAttribute="height" secondItem="KKQ-qQ-MhG" secondAttribute="height" multiplier="0.5" id="Z53-kb-0G3"/>
+                            <constraint firstItem="k40-tV-2rb" firstAttribute="top" secondItem="8Jb-Qg-JZr" secondAttribute="top" constant="30" id="ZS7-J0-88t"/>
+                            <constraint firstItem="k40-tV-2rb" firstAttribute="width" secondItem="KKQ-qQ-MhG" secondAttribute="width" multiplier="4/5" id="cAn-3F-Q3V"/>
+                            <constraint firstItem="Rc6-m9-K8B" firstAttribute="centerX" secondItem="KKQ-qQ-MhG" secondAttribute="centerX" id="vFb-1Z-c88"/>
+                            <constraint firstItem="Rc6-m9-K8B" firstAttribute="centerY" secondItem="KKQ-qQ-MhG" secondAttribute="centerY" constant="60" id="wht-je-CrD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Jb-Qg-JZr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="ItemPicture" id="Usa-AO-mGb"/>
+                    <connections>
+                        <outlet property="bigImage" destination="Z90-5F-sBH" id="JKy-Ii-Nz5"/>
+                        <outlet property="bigImageScrollView" destination="Rc6-m9-K8B" id="HJy-Tq-bg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdU-bI-vWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1629" y="865"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ItemPicture" width="30" height="30"/>
+        <image name="bear" width="400" height="600"/>
+        <image name="cat" width="400" height="600"/>
+        <image name="cat2" width="400" height="600"/>
+        <image name="donkey" width="400" height="600"/>
+        <image name="elephant" width="400" height="600"/>
+    </resources>
+</document>
